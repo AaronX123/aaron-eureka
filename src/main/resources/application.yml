@@ -5,13 +5,12 @@ eureka:
   instance:
     hostname: eureka
     #ip-address: 118.31.7.229
-    ip-address: 192.168.1.100
+    ip-address: localhost
   client:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-    fetch-registry: false
   server:
     response-cache-update-interval-ms: 3000
     eviction-interval-timer-in-ms: 3000
